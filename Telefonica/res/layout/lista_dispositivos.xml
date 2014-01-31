@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Dispositivos Encontrados:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Controlar Temperatura:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtTempMinima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Mínima"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/edtTempMaxima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Máxima"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <Button 
+            android:id="@+id/btnTemperatura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia"
+            android:onClick="iniciaTemperatura"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Controlar Humidade:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtHumidadeMinima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Mínima"
+            android:inputType="numberSigned" >
+        </EditText>
+
+        <EditText
+            android:id="@+id/edtHumidadeMaxima"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Máxima"
+            android:inputType="numberSigned" >
+        </EditText>
+        
+        <Button
+            android:id="@+id/btnHumidade" 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia"
+            android:onClick="iniciaHumidade"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Pega assaltante de geladeira:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/edtInicioGel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Mínima"
+            android:inputType="number"
+            android:maxLength="2" >
+        </EditText>
+        
+        <EditText
+            android:id="@+id/edtFinalGel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:ems="10"
+            android:hint="Máxima"
+            android:inputType="number"
+            android:maxLength="2" >
+        </EditText>
+        
+        <Button 
+            android:id="@+id/btnControleGeladeira"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inicia"
+            android:onClick="iniciaControleGeladeira"/>
+    </LinearLayout>
+
+</LinearLayout>
